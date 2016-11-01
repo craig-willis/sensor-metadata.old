@@ -23,6 +23,8 @@ Calibration targets:
 * [LabSphere](https://terraref.ncsa.illinois.edu/clowder/api/datasets/5817c7c84f0c63f2a8ca5e6c)
 * [SphereOptics](https://terraref.ncsa.illinois.edu/clowder/api/datasets/5818bb544f0c63f2a8d20963)
 
+For more information, see the [Sensor Metadata Design Notes](https://docs.google.com/document/d/1au9yTnFpCz5R63GY67EeIMIqO4wTY3vRzAP9xmw1KQA) document. 
+
 ## Adding Metadata
 ```
 cat extractor_template.json | jq --argfile md $sensor/sensor_fixed_metadata.json '.content |= [$md]' > tmp.json
@@ -31,4 +33,3 @@ curl -H "Content-Type: application/json" --user $CLOWDER_USER:$CLOWDER_PASSWORD 
 
 rm tmp.json
 ```
-
