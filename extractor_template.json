@@ -1,5 +1,5 @@
 {
-  "@context": "http://ncsa.illinois.edu",
+  "@context": "http://purl.org/terra/contexts/sensor.jsonld",
   "content" : {
   },
   "agent": {
